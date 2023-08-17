@@ -1,0 +1,68 @@
+a{
+    transition: $default-transition;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: $default-transition;
+}
+
+.btn{
+    font-family: inherit;
+    min-width: 110px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $color-white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    &-green{
+        background-color: $color-sea-green;
+        border-color: $color-sea-green;
+    }
+
+    &-black{
+        background-color: $color-black;
+    }
+
+    &-yellow{
+        background-color: $color-yellow;
+    }
+
+    &-outline-dark{
+        color: $color-black;
+        border-color: $color-black;
+    }
+
+    &-white{
+        color: $color-black;
+        background-color: $color-white;
+    }
+
+    &-outline-white{
+        color: $color-white;
+        border-color: $color-white;
+    }
+
+    &-outline-platinum{
+        border-color: $color-platinum;
+        color: $color-black;
+    }
+}
+
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

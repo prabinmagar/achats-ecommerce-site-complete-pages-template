@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Achats.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/site_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/site_icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/site_icon//favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/site_icon//site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="header flex items-center">
+            <div class="container">
+                <div class="header-wrap flex items-center justify-between">
+                    <a href="#" class="site-brand inline-flex items-end" href="#">
+                        <div class="brand-img-wrap flex items-center justify-center">
+                            <img class="site-brand-img" src="./assets/images/logo.png" alt="site-logo" />
+                        </div>
+                        <span class="site-brand-text">achats.</span>
+                    </a>
+                    <div class="flex items-center navigation-and-search">
+                        <nav class="navigation-menu">
+                            <ul class="nav-menu-list flex items-center">
+                                <li class="nav-menu-item">
+                                    <a href="#" class="nav-menu-link active">Shop</a>
+                                </li>
+                                <li class="nav-menu-item">
+                                    <a href="#" class="nav-menu-link text-gray">Men</a>
+                                </li>
+                                <li class="nav-menu-item">
+                                    <a href="#" class="nav-menu-link text-gray">Women</a>
+                                </li>
+                                <li class="nav-menu-item">
+                                    <a href="#" class="nav-menu-link text-gray">Combos</a>
+                                </li>
+                                <li class="nav-menu-item">
+                                    <a href="#" class="nav-menu-link text-gray">Fashion</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <form>
+                            <div class="input-group">
+                                <span class="input-icon"><i class="bi bi-search"></i>
+                                </span>
+                                <input type="text" class="input-control" placeholder="Search" />
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="icon-links flex items-center">
+                        <a href="#" class="icon-link inline-flex items-center justify-center"><img
+                                src="./assets/icons/heart.svg" /></a>
+                        <a href="#" class="icon-link inline-flex items-center justify-center"><img
+                                src="./assets/icons/user.svg" /></a>
+                        <a href="#" class="icon-link inline-flex items-center justify-center"><img
+                                src="./assets/icons/cart.svg" /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-main page-cart">
+            <div class="cart-sc">
+                <div class="container">
+                    <div class="cart-content">
+                        <div class="cart-content-head">
+                            <nav class="breadcrumb-nav flex items-center flex-wrap">
+                                <a href="#" class="breadcrumb-item text-base text-gray font-medium">Home</a>
+                                <span class="breadcrumb-separator"><i class="bi bi-chevron-right"></i></span>
+                                <a href="#" class="breadcrumb-item text-base text-outerspace font-semibold font-medium">Add To Cart</a>
+                             </nav>
+                             <p class="text-base text-gray">Please fill in the fields below and click place order to complete your purchase!</p>
+                             <p class="text-gray text-gray">Already registered? <a href="#" class="text-sea-green font-medium">Please login here</a></p>
+                        </div>
+
+                        <div class="cart-content-list">
+                            <table class="cart-table">
+                                <thead>
+                                    <tr>
+                                        <th>product details</th>
+                                        <th>price</th>
+                                        <th>quantity</th>
+                                        <th>shipping</th>
+                                        <th>subtotal</th>
+                                        <th class="text-center">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="cart-tbl-prod">
+                                                <div class="cart-prod-img"><img src="./assets/images/cart1.png" alt="" class="object-fit-cover" /></div>
+                                                <div class="cart-prod-info">
+                                                    <h4 class="text-base">Blue Flower Print Crop Top</h4>
+                                                    <p class="text-sm text-gray">Color: Yellow</p>
+                                                    <p class="text-sm text-gray">Size: M</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="text-lg font-bold text-outerspace">$29.00</span></td>
+                                        <td>
+                                            <div class="cart-tbl-qty flex items-center">
+                                                <button class="qty-dec-btn"><i class="bi bi-dash-lg"></i></button>
+                                                <span class="qty-value inline-flex items-center justify-center font-medium text-outerspace">2</span>
+                                                <button class="qty-inc-btn"><i class="bi bi-plus-lg"></i></i></button>
+                                            </div>
+                                        </td>
+                                        <td><span class="cart-tbl-shipping text-silver font-bold">free</span></td>
+                                        <td><span class="text-lg font-bold text-outerspace">$29.00</span></td>
+                                        <td>
+                                            <div class="cart-tbl-actions flex justify-center">
+                                                <a href="#" class="tbl-del-action text-red"><i class="bi bi-trash3"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="cart-tbl-prod">
+                                                <div class="cart-prod-img"><img src="./assets/images/cart2.png" alt="" class="object-fit-cover" /></div>
+                                                <div class="cart-prod-info">
+                                                    <h4 class="text-base">Blue Flower Print Crop Top</h4>
+                                                    <p class="text-sm text-gray">Color: Yellow</p>
+                                                    <p class="text-sm text-gray">Size: M</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="text-lg font-bold text-outerspace">119.00</span></td>
+                                        <td>
+                                            <div class="cart-tbl-qty flex items-center">
+                                                <button class="qty-dec-btn"><i class="bi bi-dash-lg"></i></button>
+                                                <span class="qty-value inline-flex items-center justify-center font-medium text-outerspace">2</span>
+                                                <button class="qty-inc-btn"><i class="bi bi-plus-lg"></i></i></button>
+                                            </div>
+                                        </td>
+                                        <td><span class="cart-tbl-shipping text-silver font-bold">free</span></td>
+                                        <td><span class="text-lg font-bold text-outerspace">$119.00</span></td>
+                                        <td>
+                                            <div class="cart-tbl-actions flex justify-center">
+                                                <a href="#" class="tbl-del-action text-red"><i class="bi bi-trash3"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="cart-tbl-prod">
+                                                <div class="cart-prod-img"><img src="./assets/images/cart3.png" alt="" class="object-fit-cover" /></div>
+                                                <div class="cart-prod-info">
+                                                    <h4 class="text-base">Blue Flower Print Crop Top</h4>
+                                                    <p class="text-sm text-gray">Color: Yellow</p>
+                                                    <p class="text-sm text-gray">Size: M</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="text-lg font-bold text-outerspace">$123.00</span></td>
+                                        <td>
+                                            <div class="cart-tbl-qty flex items-center">
+                                                <button class="qty-dec-btn"><i class="bi bi-dash-lg"></i></button>
+                                                <span class="qty-value inline-flex items-center justify-center font-medium text-outerspace">2</span>
+                                                <button class="qty-inc-btn"><i class="bi bi-plus-lg"></i></i></button>
+                                            </div>
+                                        </td>
+                                        <td><span class="cart-tbl-shipping text-silver font-bold">$5.00</span></td>
+                                        <td><span class="text-lg font-bold text-outerspace">$123.00</span></td>
+                                        <td>
+                                            <div class="cart-tbl-actions flex justify-center">
+                                                <a href="#" class="tbl-del-action text-red"><i class="bi bi-trash3"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="cart-content-foot">
+                            <div class="cart-discount">
+                                <h3 class="text-xxl text-outerspace">Discount  Codes</h3>
+                                <p class="text-base text-gray">Enter your coupon code if you have one.</p>
+
+                                <form action="">
+                                    <div class="coupon-group">
+                                        <input type="text" class="coupon-input" placeholder="Search" />
+                                        <button type="submit" class="coupon-btn text-white bg-black">Apply Coupon
+                                        </button>
+                                    </div>
+                                </form>
+                                <a href="#" class="btn btn-outline-platinum contd-shop-btn">continue shopping</a>
+                            </div>
+
+                            <div class="cart-summary">
+                                <ul class="summary-list">
+                                    <li class="summary-item flex justify-between">
+                                        <span class="font-medium text-outerspace">Sub Total</span>
+                                        <span class="font-medium text-outerspace">$513.00</span>
+                                    </li>
+                                    <li class="summary-item flex justify-between">
+                                        <span class="font-medium text-outerspace">Shipping</span>
+                                        <span class="font-medium text-outerspace">$5.00</span>
+                                    </li>
+                                    <li class="summary-item flex justify-between">
+                                        <span class="font-bold text-outerspace">Grand Total</span>
+                                        <span class="summary-item-value font-bold text-outerspace">$518.00</span>
+                                    </li>
+                                </ul>
+                                <a href="" class="btn btn-green checkout-btn">Proceed To Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-item">
+                        <h4 class="text-white text-lg footer-item-title">Need Help</h4>
+                        <ul class="ftr-links">
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Contact Us</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Track Order</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Returns & Refunds</a>
+                            </li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">FAQ's</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Career</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-item">
+                        <h4 class="text-white text-lg footer-item-title">Company</h4>
+                        <ul class="ftr-links">
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">About Us</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Achats Blog</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Achatsian</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Collaboration</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Media</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-item">
+                        <h4 class="text-white text-lg footer-item-title">More info</h4>
+                        <ul class="ftr-links">
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Term and conditions</a>
+                            </li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Privacy Policy</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Shipping Policy</a></li>
+                            <li class="ftr-link-item"><a href="#" class="text-white text-base">Sitemap</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-item">
+                        <h4 class="text-white text-lg footer-item-title">Location</h4>
+                        <ul class="ftr-links">
+                            <li class="ftr-link-item text-white">Tsupport@euphoria.in</li>
+                            <li class="ftr-link-item text-white">Eklingpura Chouraha, Ahmedabad Main Road</li>
+                            <li class="ftr-link-item text-white">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle flex items-end justify-between">
+                    <div class="ftr-social-links flex items-center">
+                        <a href="#" class="ftr-social-link bg-white flex items-center justify-center"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="ftr-social-link bg-white flex items-center justify-center"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="ftr-social-link bg-white flex items-center justify-center"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="#" class="ftr-social-link bg-white flex items-center justify-center"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="ftr-app-links">
+                        <p class="app-links-title text-white text-xl font-semibold">Download the App</p>
+                        <div class="app-links-group flex items-center">
+                            <a href="#"><img src="./assets/images/google_play.jpg" /></a>
+                            <a href="#"><img src="./assets/images/app_store.jpg" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom text-center text-white">
+                    <p class="text-base">Copyright &copy; 2023 Achats site. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./vendor/zoom-master/jquery.zoom.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

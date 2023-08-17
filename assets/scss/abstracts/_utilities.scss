@@ -1,0 +1,226 @@
+.container {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+main{
+  padding: 20px 0;
+}
+
+/* flexbox and grid */
+.flex {
+  display: flex;
+  &-col {
+    flex-direction: column;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.items {
+  &-center {
+    align-items: center;
+  }
+  &-start {
+    align-items: flex-start;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+  &-stretch {
+    align-items: stretch;
+  }
+}
+
+.justify {
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-start {
+    justify-content: flex-start;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+}
+
+.object-fit-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.no-wrap {
+  white-space: nowrap;
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+// heights and width
+.h-full{
+    height: 100%;
+}
+
+.w-full{
+    width: 100%;
+}
+
+// font weights
+.font-light{
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold{
+  font-weight: 800;
+}
+
+// text
+.text-white{
+  color: $color-white;
+}
+.text-gray{
+  color: $color-gray;
+}
+.text-black{
+  color: $color-black;
+}
+.text-sea-green{
+  color: $color-sea-green;
+}
+.text-red{
+  color: $color-red;
+}
+.text-platinum{
+  color: $color-platinum;
+}
+.text-yellow{
+  color: $color-yellow;
+}
+.text-jet{
+  color: $color-jet;
+}
+.text-outerspace{
+  color: $color-outerspace;
+}
+.text-silver{
+  color: $color-silver;
+}
+
+.text-start{
+  text-align: left;
+}
+.text-end{
+  text-align: right;
+}
+.text-underline{
+  text-decoration: underline;
+}
+.text-center{
+  text-align: center;
+}
+
+
+// backgrounds
+.bg-white{
+  background-color: $color-white;
+}
+.bg-gray{
+  background-color: $color-gray;
+}
+.bg-black{
+  background-color: $color-black;
+}
+.bg-sea-green{
+  background-color: $color-sea-green;
+}
+.bg-red{
+  background-color: $color-red;
+}
+.bg-platinum{
+  background-color: $color-platinum;
+}
+.bg-yellow{
+  background-color: $color-yellow;
+}
+.bg-jet{
+  background-color: $color-jet;
+}
+.bg-purple{
+  background-color: $color-purple;
+}
+
+
+// image
+.img-fluid{
+  width: 100%;
+  display: block;
+}
+
+// scrollbar
+.scrollbar-x {
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: grey;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    padding: 0 12px !important;
+  }
+}
+
+
+.section-default{
+  padding: 40px 0;
+
+  .section-title{
+    margin-bottom: 40px;
+  }
+}
+
+.content-stylings{
+  color: #807D7E;
+  h1, h2, h3, h4, h5, h6{
+    margin: 16px 0 12px 0;
+  }
+  p{
+    margin: 8px 0;
+  }
+  a{
+    color: $color-sea-green;
+    font-weight: 600;
+  }
+}

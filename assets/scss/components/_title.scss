@@ -1,0 +1,42 @@
+.title {
+  margin-bottom: 24px;
+
+  h3 {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+.section-title {
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 32px;
+
+  h3 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  p {
+    font-size: 18px;
+  }
+
+  &.horiz-line {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 30px;
+      background-color: $color-sea-green;
+      border-radius: 100vh;
+    }
+  }
+
+  &-sm{
+    h3{
+      font-size: 20px;
+    }
+  }
+}

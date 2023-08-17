@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Achats.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/site_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/site_icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/site_icon//favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/site_icon//site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="form-header flex items-center">
+            <div class="container">
+                <div class="form-header-wrap flex items-center justify-between">
+                    <a href="#" class="site-brand inline-flex items-end" href="#">
+                        <div class="brand-img-wrap flex items-center justify-center">
+                            <img class="site-brand-img" src="./assets/images/logo.png" alt="site-logo" />
+                        </div>
+                        <span class="site-brand-text">achats.</span>
+                    </a>
+                    <div class="flex items-center">
+                        <div class="search-and-select flex items-center">
+                            <form>
+                                <div class="input-group">
+                                    <span class="input-icon"><i class="bi bi-search"></i>
+                                    </span>
+                                    <input type="text" class="input-control" placeholder="Search" />
+                                </div>
+                            </form>
+                            <select class="lang-options">
+                                <option value="">English(United States)</option>
+                                <option value="">English(United States)</option>
+                                <option value="">English(United States)</option>
+                            </select>
+                        </div>
+                        <div class="form-header-btns btn-group">
+                            <a href="#" class="btn login-btn btn-green">Login</a>
+                            <a href="#" class="btn signup-btn btn-outline-dark">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-sign-in form-main-bg">
+            <div class="form-grid">
+                <div class="container">
+                    <div class="form-grid-content">
+                        <div class="form-grid-left">
+                            <img src="./assets/images/form_img1.png" class="object-fit-cover" alt="" />
+                        </div>
+                        <div class="form-grid-right">
+                            <div class="title">
+                                <h3>Sign In</h3>
+                            </div>
+                            <div class="sign-options">
+                                <a href="#" class="sign-option flex items-center justify-center">
+                                    <span class="sign-opt-icon flex items-center justify-center"><img src="./assets/icons/google.svg" /></span>
+                                    <span class="sign-opt-text font-medium">Continue With Google</span>
+                                </a>
+                                <a href="#" class="sign-option flex items-center justify-center">
+                                    <span class="sign-opt-icon flex items-center justify-center"><img src="./assets/icons/twitter.svg" /></span>
+                                    <span class="sign-opt-text font-medium">Continue With Twitter</span>
+                                </a>
+                            </div>
+                            <div class="form-separator flex items-center justify-center">
+                                <span class="separator-line"></span>
+                                <span class="separator-text inline-flex items-center justify-center text-white">OR</span>
+                                <span class="separator-line"></span>
+                            </div>
+
+                            <form>
+                                <div class="form-elem">
+                                    <label for="" class="form-elem-label">User name or email address</label>
+                                    <input type="text" placeholder="" name="" class="form-elem-control" />
+                                </div>
+                                <div class="form-elem">
+                                    <label for="" class="form-elem-label">Password</label>
+                                    <div class="form-elem-block">
+                                        <input type="password" placeholder="" name="" class="form-elem-control" />
+
+                                        <button type="button" class="pwd-value-toggle flex items-center">
+                                            <i class="bi bi-eye-slash-fill"></i>
+                                            <span class="pwd-toggle-text">Hide</span>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="form-elem-text text-end font-medium">Forgot your password ?</a>
+                                </div>
+
+                                <button type="submit" class="form-submit-btn btn btn-black">Sign In</button>
+                            </form>
+                            <p class="flex flex-wrap account-rel-text">Don't have an account? <a href="#" class="font-medium">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

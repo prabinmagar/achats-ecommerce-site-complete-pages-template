@@ -1,0 +1,55 @@
+input{
+    font-size: 14px;
+    border: none;
+    outline: 0;
+    color: #6d6d6d;
+
+    &::placeholder{
+        color: #adadad;
+    }
+}
+
+ul{
+    list-style-type: none;
+}
+
+.input-group{
+    min-width: 400px;
+    width: 100%;
+    border-radius: 4px;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 42px auto;
+    gap: 12px;
+    background-color: #F6F6F6;
+
+    .input-icon{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-control{
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.lang-options{
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 36px;
+    margin-right: 46px;
+    margin-left: 56px;
+    background-color: transparent;
+    option{
+        color: $color-black;
+    }
+
+    &:focus{
+        outline: 0;
+    }
+}

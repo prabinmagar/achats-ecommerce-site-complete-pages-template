@@ -1,0 +1,16 @@
+.breadcrumb-nav{
+    .breadcrumb-separator{
+        display: inline-flex;
+        font-size: 12px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .breadcrumb-item{
+        transition: $default-transition;
+
+        &:hover{
+            color: $color-outerspace;
+        }
+    }
+}
